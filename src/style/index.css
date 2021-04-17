@@ -1,0 +1,122 @@
+body{
+    
+    background-color: #2e2e2e;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+}
+h1, p {
+  color: whitesmoke;
+  margin: 0;
+  margin-top: .5em;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=phone], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+a { 
+  color:#ff6e54;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover, a:active {
+  color:#ffa600;
+}
+
+.title {
+  padding:1em 1em 2em 2em;
+  max-width: 500px;
+  
+}
+.app{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.chart-wrapper {
+    padding: 10px;
+    display: flex;
+  }
+
+  .sub-wrapper {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-content: space-around;
+      
+    
+  }
+  
+  .main.chart-wrapper {
+    height: 250px;
+  }
+  
+  .sub.chart-wrapper {
+    height: 250px;
+    width: 80%;
+  
+  }
+
+  .doughnut{
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 700px) {
+
+
+   
+    .sub-wrapper{
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+
+
+  .lineChartContainer {
+    height: 500px;
+    padding: 20px 5px;
+    background-color: black;
+  }
+  
