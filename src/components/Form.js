@@ -1,7 +1,4 @@
 import React, {Fragment} from 'react';
-
-
-
 class Form extends React.Component {
   constructor(props) {
     super(props);
@@ -12,7 +9,10 @@ class Form extends React.Component {
     };
     
   }
-  
+  mySubmitHandler = (event) => {
+    event.preventDefault();
+    window.location.href='/';
+  }
   myChangeHandler = (event) => {
     let nam = event.target.name;
     let val = event.target.value;
@@ -31,7 +31,7 @@ class Form extends React.Component {
       <div className="app">
       
         <div className="container">
-      <form>
+      <form onSubmit={this.mySubmitHandler}>
       <h1>Make a Donation</h1>
       <h3 style={{color:"white"}}>{this.state.username}We thank you for your generous contribution of {this.state.age}</h3>
       <p>Enter your name:</p>

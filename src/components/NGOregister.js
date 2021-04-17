@@ -13,6 +13,10 @@ class NGORegistrationForm extends React.Component{
         }
         console.log(json_cities[0]);
     }
+    mySubmitHandler = (event) => {
+        event.preventDefault();
+        window.location.href='/login';
+      }
     render(){
         return(
             <Fragment>
@@ -22,7 +26,7 @@ class NGORegistrationForm extends React.Component{
                             <h6 class="card-subtitle mb-2 text-muted">A different way of managing your NGO</h6>
                         </div>
                     <div class="card-body">
-                        <form style={{margin:"auto"}}>
+                        <form style={{margin:"auto"}} onSubmit={this.mySubmitHandler}>
                         <div class="form-group">
                             <label >NGO Name</label><br></br>
                             <input style={{width:"30vw"}} type="text" class="form-control" placeholder="Enter the Name of your NGO"/>
