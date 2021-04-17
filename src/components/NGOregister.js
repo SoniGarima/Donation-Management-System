@@ -15,7 +15,11 @@ class NGORegistrationForm extends React.Component{
     }
     mySubmitHandler = (event) => {
         event.preventDefault();
-        window.location.href='/DMS/login';
+        window.location.href='/Donation-Management-System/';
+      }
+      mySubmitHandler2 = (event) => {
+        event.preventDefault();
+        window.location.href='/Donation-Management-System/';
       }
     render(){
         return(
@@ -55,11 +59,11 @@ class NGORegistrationForm extends React.Component{
                         <button type="submit" class="btn btn-outline-info">Submit</button>
                         </form>
                         <div>
-                            Already Registered? Login <a href="/DMS/login">here.</a>
+                            Already Registered? Login <button class="btn btn-outline-success m-2" onClick={this.mySubmitHandler}>here.</button>
                         </div>
                     </div>
                     <div style={{backgroundColor:"skyblue"}}>
-                        <h5 style={{margin:"7px"}}>Want to make a donation? Visit <a href="/DMS/all">here</a> and make a contribution.</h5>
+                        <h5 style={{margin:"7px"}}>Want to make a donation? Visit <button class="btn btn-outline-success m-2" onClick={this.mySubmitHandler2}>here.</button> and make a contribution.</h5>
                     </div>
                 </div>
             </Fragment>

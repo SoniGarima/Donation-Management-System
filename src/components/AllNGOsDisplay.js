@@ -3,7 +3,7 @@ import logo1 from "../images/ngo2.png"
 import logo2 from "../images/ngo3.png"
 import logo3 from "../images/ngo4.jpeg"
 import logo4 from "../images/ngo1.jpeg"
-import { Redirect } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NGOS = [
     {"logo" : logo1, "name" : "Sanghamithra","desc" : "Sanghamitra Foundation focuses on CHILDREN & YOUTH EDUCATION HEALTH & NUTRITION and is headquartered in Kakinada, Andhra Pradesh, India."},
@@ -19,9 +19,14 @@ class AllNGOs extends React.Component{
     constructor(){
         super();
     }
-    projectOpen(){
-        return <Redirect to='/DMS/projects' />;
-    }
+    mySubmitHandler = (event) => {
+        event.preventDefault();
+        window.location.href='/Donation-Management-System/';
+      }
+      mySubmitHandler2 = (event) => {
+        event.preventDefault();
+        window.location.href='/Donation-Management-System/';
+      }
     render(){
         return(
             <Fragment>
@@ -39,8 +44,11 @@ class AllNGOs extends React.Component{
                                 <p className="card-text" style={{color:"black"}}>{value["desc"]}</p>
                             </div>
                             <div style={{margin:"10px"}}>
-                                <button class="btn btn-outline-success m-2"><a href='/DMS/form'>Donate</a></button>
-                                <a href='/DMS/projects' class="btn btn-outline-info m-2">Know More</a>
+                            <Link to={'/Donation-Management-System/form'}>
+                                <button class="btn btn-outline-success m-2">Donate</button></Link>
+                                <Link to={'/Donation-Management-System/projects'}>
+                                <button class="btn btn-outline-success m-2">Know More</button>
+                                </Link>
                             </div>
                             </div>
                             </div>

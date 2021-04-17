@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import logo1 from "../images/plogo1.jpg"
 import logo2 from "../images/plogo2.jpeg"
 import logo3 from "../images/plogo3.jpeg"
-
+import { Link } from 'react-router-dom';
 
 const NGOS = [
     {"logo" : logo1, "name" : "Vastra Project","desc" : "It revolves around the entrepreneurs who are washer man collecting or buying (based on the will of the) discarded clothes from various colleges and societies and segregating them into reusable and non-reusable sections. The reusable clothes are taken for refurbishing processes (Ironing, washing, stitching, etc.) and then sold at an affordable price to the economically weaker sections of the society. The non-reusable section is taken to a local community of women in a nearby village which converts these clothes into doormats and carpets which are again sold in the general market. this also empowers the women community."},
@@ -32,8 +32,9 @@ class NGOprojects extends React.Component{
                                 <h5 class="card-title">{value["name"]}</h5>
                                 <p style={{color:"black"}} class="card-text">{value["desc"]}</p>
                             </div>
-                            <button class="btn btn-outline-success m-2"><a href='/DMS/form'>Donate</a></button>
-                                
+                            <Link to={'/Donation-Management-System/form'}>
+                            <button class="btn btn-outline-success m-2">Donate</button>
+                                </Link>
                         </div>
                     );
                     })}

@@ -6,7 +6,7 @@ class NGOLoginForm extends React.Component{
     }
     mySubmitHandler = (event) => {
         event.preventDefault();
-        window.location.href='/DMS/';
+        window.location.href='/Donation-Management-System/';
       }
     render(){
         return(

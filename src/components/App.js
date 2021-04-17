@@ -16,15 +16,15 @@ export class App extends Component {
             <>
             <Router>
             <Navbar />
-            <Route exact path="/DMS/" component={About}/>
-            <Route exact path="/DMS/form" component={Form}/>
-            <Route exact path="/DMS/transactions" component={Transactions}/>
-            <Route exact path="/DMS/data" component={Data}/>
-            <Route exact path="/DMS/regression" component={Regression}/>
-            <Route exact path="/DMS/register" component={NGORegistrationForm}/>
-            <Route exact path="/DMS/login" component={NGOLoginForm}/>
-            <Route exact path="/DMS/all" component={AllNGOs}/>
-            <Route exact path="/DMS/projects" component={NGOprojects}/>
+            <Route exact path="/Donation-Management-System/" component={About}/>
+            <Route exact path="/Donation-Management-System/form" component={Form}/>
+            <Route exact path="/Donation-Management-System/transactions" component={Transactions}/>
+            <Route exact path="/Donation-Management-System/data" component={Data}/>
+            <Route exact path="/Donation-Management-System/regression" component={Regression}/>
+            <Route exact path="/Donation-Management-System/register" component={NGORegistrationForm}/>
+            <Route exact path="/Donation-Management-System/login" component={NGOLoginForm}/>
+            <Route exact path="/Donation-Management-System/all" component={AllNGOs}/>
+            <Route exact path="/Donation-Management-System/projects" component={NGOprojects}/>
             </Router>
             </>
         )

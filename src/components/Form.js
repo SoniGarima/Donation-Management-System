@@ -11,7 +11,7 @@ class Form extends React.Component {
   }
   mySubmitHandler = (event) => {
     event.preventDefault();
-    window.location.href='/DMS/';
+    window.location.href='/Donation-Management-System/';
   }
   myChangeHandler = (event) => {
     let nam = event.target.name;
