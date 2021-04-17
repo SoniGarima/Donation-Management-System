@@ -6,49 +6,49 @@ import * as IoIcons from 'react-icons/io';
 export const SidebarData = [
   {
     title: 'Home',
-    path: '/',
+    path: '/DMS/',
     icon: <AiIcons.AiFillHome />,
     cName: 'nav-text'
   },
   {
     title: 'Donate',
-    path: '/form',
+    path: '/DMS/form',
     icon: <IoIcons.IoIosPaper />,
     cName: 'nav-text'
   },
   {
     title: 'Record',
-    path: '/transactions',
+    path: '/DMS/transactions',
     icon: <FaIcons.FaMoneyCheckAlt />,
     cName: 'nav-text'
   },
   {
     title: 'Regress',
-    path: '/regression',
+    path: '/DMS/regression',
     icon: <FaIcons.FaChartLine />,
     cName: 'nav-text'
   },
   {
     title: 'Data',
-    path: '/data',
+    path: '/DMS/data',
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
   },
   {
     title: 'NGOs',
-    path: '/all',
+    path: '/DMS/all',
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
   },
   {
     title: 'Login',
-    path: '/login',
+    path: '/DMS/login',
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
   },
   {
     title: 'Register',
-    path: '/register',
+    path: '/DMS/register',
     icon: <FaIcons.FaRegIdBadge />,
     cName: 'nav-text'
   }

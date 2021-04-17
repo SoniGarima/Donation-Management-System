@@ -16,15 +16,15 @@ export class App extends Component {
             <>
             <Router>
             <Navbar />
-            <Route exact path="/" component={About}/>
-            <Route exact path="/form" component={Form}/>
-            <Route exact path="/transactions" component={Transactions}/>
-            <Route exact path="/data" component={Data}/>
-            <Route exact path="/regression" component={Regression}/>
-            <Route exact path="/register" component={NGORegistrationForm}/>
-            <Route exact path="/login" component={NGOLoginForm}/>
-            <Route exact path="/all" component={AllNGOs}/>
-            <Route exact path="/projects" component={NGOprojects}/>
+            <Route exact path="/DMS/" component={About}/>
+            <Route exact path="/DMS/form" component={Form}/>
+            <Route exact path="/DMS/transactions" component={Transactions}/>
+            <Route exact path="/DMS/data" component={Data}/>
+            <Route exact path="/DMS/regression" component={Regression}/>
+            <Route exact path="/DMS/register" component={NGORegistrationForm}/>
+            <Route exact path="/DMS/login" component={NGOLoginForm}/>
+            <Route exact path="/DMS/all" component={AllNGOs}/>
+            <Route exact path="/DMS/projects" component={NGOprojects}/>
             </Router>
             </>
         )

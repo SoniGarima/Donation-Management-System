@@ -20,7 +20,7 @@ class AllNGOs extends React.Component{
         super();
     }
     projectOpen(){
-        return <Redirect to='/projects' />;
+        return <Redirect to='/DMS/projects' />;
     }
     render(){
         return(
@@ -39,8 +39,8 @@ class AllNGOs extends React.Component{
                                 <p className="card-text" style={{color:"black"}}>{value["desc"]}</p>
                             </div>
                             <div style={{margin:"10px"}}>
-                                <button class="btn btn-outline-success m-2"><a href='/form'>Donate</a></button>
-                                <a href='/projects' class="btn btn-outline-info m-2">Know More</a>
+                                <button class="btn btn-outline-success m-2"><a href='/DMS/form'>Donate</a></button>
+                                <a href='/DMS/projects' class="btn btn-outline-info m-2">Know More</a>
                             </div>
                             </div>
                             </div>
