@@ -7,6 +7,13 @@ We have used additional packages ass well such as Chart.js for visualisation pur
 An initial attempt was made by us to make the machine learning model using the Tensorflow JS framework but the accuracy of the model was even below a baseline model.
 So we had to eventually give up on that line of work and use the packages mentioned.
 
+## Problem Statement
+Donation management:
+Most NGOs use excel sheets to manage donations. With their
+increasing presence in various locations, administrations are finding it
+difficult to manage the collected data and information. How could you help
+these NGOs?
+
 ![homepage](images/s2.PNG)
 
 ## Tech Stack
