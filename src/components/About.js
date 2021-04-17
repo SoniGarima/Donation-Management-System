@@ -1,8 +1,8 @@
 import React, { Component,Fragment } from "react";
 var sectionStyle = {
   width: "100%",
-  height: "400px",
-  
+  height: "50vh",
+  backgroundSize:"contain",
   backgroundImage: "url(" + "https://images.squarespace-cdn.com/content/v1/5bfb078b3c3a53fe5ad37106/1550498338112-MARSD65KHVARZO1VP5V1/ke17ZwdGBToddI8pDm48kPpoD7rq4bpS5FKkOc2I0aJZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIrxFq7Gyry22xHN_I-5kpazY44fCGMXxnagclA-IhTnE/Hope+Logo+Initial.png" + ")",
   backgroundRepeat  : 'no-repeat',
   backgroundPosition: 'center',
