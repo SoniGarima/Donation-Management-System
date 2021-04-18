@@ -9,12 +9,46 @@ So we had to eventually give up on that line of work and use the packages mentio
 
 ## Problem Statement
 Donation management:
-Most NGOs use excel sheets to manage donations. With their
-increasing presence in various locations, administrations are finding it
-difficult to manage the collected data and information. How could you help
-these NGOs?
 
-![homepage](images/s2.PNG)
+NGO’s are no less than life-saving guardians working silently for the needy, the vulnerable and ones who are suffering. 
+NGOs also work for emergency relief, rural development and women’s empowerment etc enabling all voices to be heard, strengthening their lives and giving them a reason to live for.
+They are mostly running on the donations made to them by the people and the Government aids. Many NGOs receive funding from local, state, and federal government entities through grants.
+In the age of technology it has been found that still several of the NGOs are using the Excel Sheets to maintain their records and other transactions. 
+There are several downsides of this as there is lack of security of data and data management also becomes difficult.
+Not only did the COVID-19 pandemic trigger the worst public health crisis, it also brought about an economic crisis of massive proportions. The pandemic brought challenges for the NGOs on two fronts:<br>
+1. To provide as much help as possible to the needy.<br>
+2. They were receiving a lot of funds but did not have the infrastructure to manage it.<br>
+
+Thus, the biggest problems which the NGOs are facing at the present time is the collection and the  management of funding which they are receiving 
+
+## Project Idea
+We have thought of designing a portal for both NGOs and Donors where the Security of data, Management of data and Analysis of that data would be taken into account.
+There will be 2 types of Users - Target Audience :<br>
+        1. NGOs - NGOs will first register with us and then they are good to go.<br>
+        2. Donors - Donors can visit our portal without logging in as a guest user.<br>
+<br>
+Key features designed for NGOs :<br>
+        1. Complete Transparency of the data will be there as all the transactions would be readily available to be viewed for the organization only.<br>
+        2. Statistical Analysis of their data. A complete data analysis in the form of regression techniques, graph plotting would be performed on their transaction data to help them.<br>
+        3. Highly Secure Environment in terms of management and user friendly UI Design would make the web application the first choice for the NGOs.<br>
+        4. Can add its projects on the portal.<br>
+        5. Statistical Analysis of the project wise data would also be shown.<br>
+        6. The projects individual data would also be secured and donors can only see the projects agenda.<br>
+     <br>
+Key features designed for donors/guest users :<br>
+        1. Donors will be able to view <br>
+                1. All NGOs general information<br>
+                2. Projects under different NGOs<br>
+        2. Donors will be able to donate in the NGO of his/her interest.<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;      1. Anonymously <br>
+           &nbsp;&nbsp;&nbsp;&nbsp;     2. Not anonymous<br>
+
+<br>
+
+## Implementation
+For the implementation of the solution discussed above we thought of designing a web app using React with addition libraries such as Chart.js, Regression.js etc to provide the NGOs a single self sufficient platform to manage their donations and also to receive donations for their noble causes. Security being a primary concern, we aim to use bcrypt.js for encryption of all sensitive informations.
+
+
 
 ## Tech Stack
 
@@ -25,7 +59,13 @@ these NGOs?
         Chart.js
         Regression.js
 
+
+
+## Screenshots 
 ![homepage](images/s1.PNG)
+![homepage](images/s2.PNG)
+![homepage](images/s4.PNG)
+![homepage](images/s3.PNG)
 
 ## How to run locally
 
@@ -50,11 +90,11 @@ For the machine learning part several models were tried including Linear Regress
 
 So the app workflow is as follows:
 First the NGOs needs to register and then using those credentials he needs to log in which would lead him to the main page. There they can list out various projects which they are curretly working on.
-![homepage](images/s3.PNG)
+
 Now the donors will be able to see them in the list of organisations and projects to which they can contribute.
 After the user makes the donation then it is added to the transaction page and simultaneously that data would also be used for analysis purposes.(For Statistical Analysis and Regression Analysis).
 
-![homepage](images/s4.PNG)
+
 
 ## Directory Structre
 
